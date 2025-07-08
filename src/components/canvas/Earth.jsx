@@ -5,10 +5,11 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  // const earth = useGLTF("/planet/scene.gltf");
-  const earth = useGLTF("/a_windy_day/scene.gltf");
+  const earth = useGLTF("/planet/scene.gltf");
+  //数字星球太大了，无法托管到cloudflare，所以我放弃了
+  // const earth = useGLTF("/a_windy_day/scene.gltf");
   return (
-    <primitive object={earth.scene} scale={2} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 };
 
