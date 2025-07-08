@@ -19,8 +19,8 @@ const Hero = () => {
             Sir, This is <span className='text-[#915EFF]'>堯</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            下面的超炫酷电脑 <br className='sm:block hidden' />
-            其实不是我的
+            这是一个印象集引导界面<br className='sm:block hidden' />
+            主要用了react和three.js
           </p>
         </div>
       </div>

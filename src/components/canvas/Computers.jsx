@@ -5,8 +5,14 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("/desktop_pc/scene.gltf");
-
+  // 炫酷电脑
+  // const computer = useGLTF("/desktop_pc/scene.gltf");
+  //宝可梦
+  // const computer = useGLTF('/desktop_pc/pokemon_rse_-_pokemon_center/scene.gltf')
+  //小电脑
+    const computer = useGLTF('desktop_pc/smol_ame_in_an_upcycled_terrarium_hololiveen/scene.gltf')
+    // 空间站
+        // const computer = useGLTF('desktop_pc/iss-_international_space_station/scene.gltf')
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
@@ -21,9 +27,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 1.5:1.7}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, 0]}
+        rotation={[0, Math.PI / 4, 0 ]}
       />
     </mesh>
   );
@@ -64,8 +70,10 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI }
+          minPolarAngle={0}
+          autoRotate={true}
+          autoRotateSpeed={1.5} 
         />
         <Computers isMobile={isMobile} />
       </Suspense>

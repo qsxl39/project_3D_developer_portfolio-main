@@ -1,3 +1,5 @@
+// 导出图片
+
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -26,9 +28,19 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+// 新增技术栈导出
+import vue from "./tech/vue.svg";
+
+// 新增导出
+import RetroFuture from "./company/RetroFuture.png";
+import Dreamcore from "./company/Dreamcore.png";
+import Railway from "./company/Railway.png";
+import EscapeReality from "./company/EscapeReality.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -59,4 +71,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  RetroFuture,
+  Dreamcore,
+  Railway,
+  EscapeReality,
+  //新增技术栈
+  vue,
 };
