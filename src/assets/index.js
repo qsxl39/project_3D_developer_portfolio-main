@@ -30,6 +30,11 @@ import tesla from "./company/tesla.png";
 
 // 新增技术栈导出
 import vue from "./tech/vue.svg";
+import elementplus from "./tech/elementplus.svg";
+import antdesignpro from "./tech/antdesignpro.png";
+import pinia from "./tech/pinia.svg";
+import uni from "./tech/uni.png";
+import unocss from "./tech/unocss.svg";
 
 // 新增导出
 import RetroFuture from "./company/RetroFuture.png";
@@ -77,4 +82,9 @@ export {
   EscapeReality,
   //新增技术栈
   vue,
+  elementplus,
+  antdesignpro,
+  pinia,
+  uni,
+  unocss,
 };

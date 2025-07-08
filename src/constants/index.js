@@ -30,6 +30,11 @@ import {
   EscapeReality,
   //技术栈logo
   vue,
+  elementplus,
+  antdesignpro,
+  pinia,
+  uni,
+  unocss,
 } from "../assets";
 
 export const navLinks = [
@@ -84,18 +89,38 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-    {
     name: "Vue3",
     icon: vue,
   },
-
-  {
-    name: "Redux Toolkit",
-    icon: redux,
+    {
+    name: "elementplus",
+    icon: elementplus,
   },
+      {
+    name: "antdesignpro",
+    icon: antdesignpro,
+  },
+      {
+    name: "pinia",
+    icon: pinia,
+  },
+      {
+    name: "uni",
+    icon: uni,
+  },
+      {
+    name: "unocss",
+    icon: unocss,
+  },
+  
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -104,10 +129,10 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
     name: "Three JS",
     icon: threejs,
@@ -120,10 +145,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -144,7 +169,7 @@ const experiences = [
     title: "Dreamcore",
     // company_name: "Tesla",
     icon: Dreamcore,
-    iconBg: "#805249",
+    iconBg: "linear-gradient(to bottom, #6d90ca 0%,#7b99cb 30%, #F9D6BF 80%)", 
     // date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
