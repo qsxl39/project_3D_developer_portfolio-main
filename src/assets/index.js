@@ -34,7 +34,7 @@ import elementplus from "./tech/elementplus.svg";
 import antdesignpro from "./tech/antdesignpro.png";
 import pinia from "./tech/pinia.svg";
 import uni from "./tech/uni.png";
-import unocss from "./tech/unocss.svg";
+import unocss from "./tech/Unocss.svg";
 
 // 新增导出
 import RetroFuture from "./company/RetroFuture.png";
