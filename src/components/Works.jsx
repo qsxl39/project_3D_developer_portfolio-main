@@ -23,7 +23,8 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+// 项目介绍部分 - 使用 SectionWrapper
+const WorksIntro = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -49,7 +50,21 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+    </>
+  );
+};
+
+// 包装项目介绍部分
+const WrappedWorksIntro = SectionWrapper(WorksIntro, "");
+
+// 主组件 - 不使用 SectionWrapper，避免样式干扰
+const Works = () => {
+  return (
+    <>
+      {/* 项目介绍部分 - 有样式包装 */}
+      <WrappedWorksIntro />
       
+      {/* work 动画部分 - 无样式包装，避免冲突 */}
       <StrictMode>
         <App />
       </StrictMode>
@@ -57,4 +72,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default Works;
